@@ -84,12 +84,12 @@ prodesk-it-corporate-brand/
 ## Live Website
 
 **Live URL:**  
-`[Add your deployed Vercel or Netlify URL here]`
+`[https://prodesk-sprint-1-coral.vercel.app/]`
 
 ## GitHub Repository
 
 **Repository URL:**  
-`[Add your GitHub repository URL here]`
+`[(https://github.com/shashank113333/prodesk-sprint-1)]`
 
 ## Project Screenshot
 
