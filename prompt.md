@@ -1,57 +1,8 @@
-## Project
 
-**Project:** The Corporate Brand  
-**Company:** Prodesk IT  
-**Sprint:** Sprint 1  
-**Technologies:** HTML5, CSS3, Vanilla JavaScript
-
----
-
-## Purpose
-
-This file records the AI prompts used during the development and review of the project.
-
-AI was used as a development assistance tool to understand concepts, review code, debug issues and implement individual features.
-
-The generated suggestions were reviewed during development and tested in the project.
-
----
-
-# HTML Development
 
 ### Prompt 1 — HTML Structure
 
-```text
-Build the HTML structure for my Prodesk IT Sprint 1 landing page.
 
-The page must contain:
-
-- Header
-- Navbar
-- Logo
-- Home
-- About
-- Services
-- Contact
-- Hero section
-- Hero headline
-- Subtitle
-- Get Started CTA
-- Learn More CTA
-- Hero image
-- Three service cards
-- Footer
-
-Use semantic HTML5 elements.
-
-Do not use Bootstrap, Tailwind or other frameworks.
-
-Keep the HTML simple and beginner-friendly.
-```
-
-### Prompt 2 — HTML Review
-
-```text
 Review my current index.html against the Prodesk IT Sprint 1 requirements.
 
 Check:
@@ -79,9 +30,7 @@ Do not modify the HTML until the problems are explained.
 
 # CSS Development
 
-### Prompt 3 — CSS Foundation
-
-```text
+### Prompt 2 — CSS Foundation
 Work on the CSS foundation of my Prodesk IT Sprint 1 project.
 
 Explain:
@@ -98,9 +47,7 @@ Then implement only the basic CSS foundation.
 Do not modify the navbar, hero, services, footer, responsive design or JavaScript.
 ```
 
-### Prompt 4 — CSS Variables
-
-```text
+### Prompt 3 — CSS Variables
 Create a simple professional CSS color system.
 
 Explain:
@@ -122,9 +69,7 @@ Create variables for:
 Do not create duplicate variables if they already exist.
 ```
 
-### Prompt 5 — Main Container
-
-```text
+### Prompt 4 — Main Container
 Create a centered main content layout.
 
 Explain:
@@ -138,9 +83,7 @@ Use a reasonable maximum width and keep the layout simple.
 Do not modify individual sections yet.
 ```
 
-### Prompt 6 — Navbar Flexbox
-
-```text
+### Prompt 5 — Navbar Flexbox
 Style the desktop navbar using CSS Flexbox.
 
 Explain:
@@ -157,12 +100,9 @@ Requirements:
 - Clean spacing
 - Professional appearance
 
+
 Do not implement the mobile menu yet.
-```
-
-### Prompt 7 — Hero Section
-
-```text
+### Prompt 6 — Hero Section
 Style the Hero section using CSS Flexbox.
 
 Requirements:
@@ -173,12 +113,9 @@ Requirements:
 - Professional typography
 - Responsive image width
 
-Explain every important CSS property before implementation.
-```
+Explain every important CSS property .
 
-### Prompt 8 — Services Grid
-
-```text
+### Prompt 7 — Services Grid
 Style the three service cards using CSS Grid.
 
 Explain:
@@ -192,11 +129,7 @@ Explain:
 Create three equal columns on desktop.
 
 Keep the CSS simple.
-```
-
-### Prompt 9 — Card Hover Effect
-
-```text
+### Prompt 8 — Card Hover Effect
 Add a simple hover effect to the service cards.
 
 Explain:
@@ -209,11 +142,7 @@ Explain:
 The cards should move slightly upward when hovered.
 
 Keep the animation subtle and professional.
-```
-
-### Prompt 10 — Responsive Design
-
-```text
+### Prompt 9 — Responsive Design
 Make the complete website responsive.
 
 Explain:
@@ -231,15 +160,10 @@ On mobile:
 - Images should fit the screen
 - Footer should remain usable
 - No horizontal scrolling
-```
-
----
 
 # JavaScript Development
 
-### Prompt 11 — Mobile Navigation
-
-```text
+### Prompt 10 — Mobile Navigation
 Implement the mobile hamburger menu using vanilla JavaScript.
 
 My HTML already contains:
@@ -257,11 +181,7 @@ Explain:
 Clicking the hamburger should add/remove the active class from the navigation menu.
 
 Keep the JavaScript simple.
-```
-
-### Prompt 12 — Dark Mode
-
-```text
+### Prompt 11 — Dark Mode
 Implement a Dark/Light mode toggle using vanilla JavaScript.
 
 My HTML already contains:
@@ -277,11 +197,7 @@ Explain:
 Use the existing CSS variables and toggle a dark-mode class on the body.
 
 Keep the JavaScript beginner-friendly.
-```
-
-### Prompt 13 — Glassmorphism
-
-```text
+### Prompt 12 — Glassmorphism
 Implement the glassmorphism effect for the sticky navigation.
 
 Explain:
@@ -293,16 +209,14 @@ Explain:
 
 Use JavaScript only if necessary.
 
-Keep the implementation simple.
-```
 
----
+Keep the implementation simple.
 
 # QA and Review
 
 ### Prompt 14 — Initial QA
 
-```text
+
 Review the complete Prodesk IT Sprint 1 project.
 
 Check:
@@ -328,12 +242,9 @@ Check:
 
 Give a PASS / FAIL / NEEDS IMPROVEMENT report.
 
-Do not automatically change anything before showing the problems.
-```
+Do not  change anything only showing the problems.
 
-### Prompt 15 — Fix QA Issues
-
-```text
+### Prompt 14 — Fix QA Issues
 Now fix only the FAIL and WARNING issues identified in the previous QA report.
 
 Do not introduce new features.
@@ -341,11 +252,11 @@ Do not redesign the website.
 Keep all currently working functionality intact.
 
 After making the fixes, run another QA check and report the results.
-```
+
 
 ### Prompt 16 — GitHub Preparation
 
-```text
+
 Now prepare the project for GitHub submission.
 
 Do not push anything yet.
@@ -366,11 +277,11 @@ Check:
 Tell me what I need to fix before pushing to GitHub.
 
 Do not execute git push.
-```
+
 
 ### Prompt 17 — README
 
-```text
+
 Create or improve README.md for my Prodesk IT Sprint 1 project.
 
 Include placeholders for:
@@ -387,16 +298,10 @@ Include placeholders for:
 
 Do not invent a Live URL or GitHub URL.
 
-Keep the README professional and simple.
-```
-
----
-
 ## AI Usage Notes
 
 AI assistance was used during development for:
 
-- Understanding HTML concepts
 - Understanding CSS concepts
 - Flexbox and Grid implementation
 - Responsive design
@@ -408,4 +313,3 @@ AI assistance was used during development for:
 - Documentation
 
 The project was reviewed and tested during development.
-```
