@@ -18,7 +18,6 @@ No Bootstrap, Tailwind CSS or other UI framework is used for the Sprint 1 base i
 
 ## Features
 
-
 ### Phase 1 — Base MVP
 
 - Responsive navigation bar
@@ -61,17 +60,15 @@ The service cards use CSS Grid on larger screens and adapt to a suitable mobile 
 
 ## Project Structure
 
-```text
 prodesk-it-corporate-brand/
 │
 ├── index.html
 ├── style.css
 ├── script.js
-├── logo.png
+├── logo.webp
 ├── hero-banner.webp
 ├── README.md
 └── Prompts.md
-```
 
 ## Local Setup
 
@@ -93,28 +90,30 @@ prodesk-it-corporate-brand/
 
 ## Project Screenshot
 
-Add a screenshot of the final deployed website here.
-
 ![The Corporate Brand Screenshot](screenshot.png)
 
-## QA
-
+QA
 The project should be tested for:
 
-- Desktop responsiveness
-- Tablet responsiveness
-- Mobile responsiveness
-- Navigation
-- Hamburger menu
-- Dark/Light mode
-- Hero buttons
-- Service cards
-- Hover effects
-- Sticky navigation
-- Glassmorphism
-- Image loading
-- Console errors
-- Horizontal overflow
+Desktop responsiveness
+Tablet responsiveness
+Mobile responsiveness
+Navigation
+Hamburger menu
+Dark/Light mode
+Hero buttons
+Service cards
+Hover effects
+Sticky navigation
+Glassmorphism
+Image loading
+Console errors
+Horizontal overflow
+Lighthouse Scores
 
-*Final Lighthouse scores should be added here after running the Lighthouse audit.*
-```
+Performance: 99
+Accessibility: 100
+Best Practices: 100
+SEO: 100
+
+

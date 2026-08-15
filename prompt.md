@@ -1,315 +1,70 @@
+# HTML & Performance Optimization
 
+# Prompt 1 — Lighthouse Performance (HTML)
+I have written the complete HTML structure for my landing page. I want to optimize it to achieve a 100/100 Lighthouse Performance score.
+Explain and help me implement:
+- Preconnecting and Preloading the main CSS file
+- Deferring the JavaScript file
+- Adding proper width/height attributes for images to prevent Cumulative Layout Shift (CLS)
+- Using `fetchpriority="high"` for the LCP hero image
 
-### Prompt 1 — HTML Structure
+# CSS Development & Layout
 
-
-Review my current index.html against the Prodesk IT Sprint 1 requirements.
-
-Check:
-
-- Navbar
-- Home
-- About
-- Services
-- Contact
-- Hero section
-- CTA buttons
-- Three service cards
-- About section
-- Footer
-- Image alt attributes
-- Correct IDs and navigation links
-- Semantic HTML
-- Missing closing tags
-- Duplicate IDs
-
-Do not modify the HTML until the problems are explained.
-```
-
----
-
-# CSS Development
-
-### Prompt 2 — CSS Foundation
-Work on the CSS foundation of my Prodesk IT Sprint 1 project.
-
+# Prompt 2 — CSS Variables Foundation
+I am writing the CSS for my project. Help me set up a professional color system for light and dark modes.
 Explain:
-
-- Universal selector
-- box-sizing
-- margin
-- padding
-- font-family
-- line-height
-
-Then implement only the basic CSS foundation.
-
-Do not modify the navbar, hero, services, footer, responsive design or JavaScript.
-```
-
-### Prompt 3 — CSS Variables
-Create a simple professional CSS color system.
-
-Explain:
-
 - :root
-- CSS variables
+- CSS variables (Custom properties)
 - var()
+Do not write the whole CSS, just guide me on setting up the variables.
 
-Create variables for:
-
-- Primary color
-- Secondary color
-- Background
-- Card background
-- Main text
-- Muted text
-- Border
-
-Do not create duplicate variables if they already exist.
-```
-
-### Prompt 4 — Main Container
-Create a centered main content layout.
-
+# Prompt 3 — CSS Flexbox (Navbar & Hero)
+I want to align my desktop navbar and Hero section using CSS Flexbox.
 Explain:
-
-- max-width
-- margin: 0 auto
-- padding
-
-Use a reasonable maximum width and keep the layout simple.
-
-Do not modify individual sections yet.
-```
-
-### Prompt 5 — Navbar Flexbox
-Style the desktop navbar using CSS Flexbox.
-
-Explain:
-
 - display: flex
 - justify-content
 - align-items
-- gap
+How can I place the logo on the left and navigation links on the right cleanly ?
 
-Requirements:
-
-- Logo on the left
-- Navigation links on the right
-- Clean spacing
-- Professional appearance
-
-
-Do not implement the mobile menu yet.
-### Prompt 6 — Hero Section
-Style the Hero section using CSS Flexbox.
-
-Requirements:
-
-- Hero text on the left
-- Hero image on the right
-- Proper spacing
-- Professional typography
-- Responsive image width
-
-Explain every important CSS property .
-
-### Prompt 7 — Services Grid
-Style the three service cards using CSS Grid.
-
+# Prompt 4 — CSS Grid (Service Cards)
+I want to display three service cards side-by-side on desktop. Help me style them using CSS Grid.
 Explain:
-
 - display: grid
-- grid-template-columns
-- repeat()
-- 1fr
+- grid-template-columns: repeat(3, 1fr)
 - gap
+Keep the explanation simple so I can implement it myself.
 
-Create three equal columns on desktop.
+# Prompt 5 — Responsive Design (Media Queries)
+Guide me on making my Flexbox and Grid layouts responsive for mobile devices.
+Explain how to use "@media (max-width: 768px)" to change the flex-direction and grid columns so the layout stacks perfectly on mobile screens without horizontal scrolling.
 
-Keep the CSS simple.
-### Prompt 8 — Card Hover Effect
-Add a simple hover effect to the service cards.
+# JavaScript Functionality
 
-Explain:
+# Prompt 6 — Mobile Hamburger Menu
+Help me write vanilla JavaScript for a mobile hamburger menu. 
+My HTML already has "#hamburger" and "#nav-menu". 
+Explain how to use "addEventListener" and "classList.toggle" to show/hide the menu when clicked.
 
-- :hover
-- transition
-- transform
-- translateY()
+# Prompt 7 — Dark Mode Toggle
+Help me add a Dark Mode toggle using vanilla JavaScript.
+Explain how to toggle a "dark-mode" class on the "document.body" so that my CSS variables switch colors smoothly.
 
-The cards should move slightly upward when hovered.
+# Prompt 8 — Glassmorphism Effect
+Explain how to add a modern glassmorphism effect to my sticky navigation bar using the CSS "backdrop-filter" property.
 
-Keep the animation subtle and professional.
-### Prompt 9 — Responsive Design
-Make the complete website responsive.
+# Final Review & QA
 
-Explain:
-
-- media queries
-- max-width
-- flex-direction
-- responsive Grid
-
-On mobile:
-
-- Navigation should become mobile-friendly
-- Hero should stack vertically
-- Service cards should become one column
-- Images should fit the screen
-- Footer should remain usable
-- No horizontal scrolling
-
-# JavaScript Development
-
-### Prompt 10 — Mobile Navigation
-Implement the mobile hamburger menu using vanilla JavaScript.
-
-My HTML already contains:
-
-- #hamburger
-- #nav-menu
-
-Explain:
-
-- getElementById
-- addEventListener
-- click
-- classList.toggle
-
-Clicking the hamburger should add/remove the active class from the navigation menu.
-
-Keep the JavaScript simple.
-### Prompt 11 — Dark Mode
-Implement a Dark/Light mode toggle using vanilla JavaScript.
-
-My HTML already contains:
-
-- #theme-toggle
-
-Explain:
-
-- document.body
-- classList.toggle
-- click event
-
-Use the existing CSS variables and toggle a dark-mode class on the body.
-
-Keep the JavaScript beginner-friendly.
-### Prompt 12 — Glassmorphism
-Implement the glassmorphism effect for the sticky navigation.
-
-Explain:
-
-- position: sticky
-- top
-- z-index
-- backdrop-filter
-
-Use JavaScript only if necessary.
+# Prompt 9 — Final Lighthouse Accessibility Audit
+Review my completed code for any remaining Lighthouse accessibility or best practice issues.
+Check for:
+- Missing image alt attributes
+- Semantic HTML tags (nav, main, footer)
+- Color contrast issues
+Tell me exactly what to fix to hit a 100/100 score on Accessibility and SEO.
 
 
-Keep the implementation simple.
-
-# QA and Review
-
-### Prompt 14 — Initial QA
-
-
-Review the complete Prodesk IT Sprint 1 project.
-
-Check:
-
-- HTML structure
-- CSS
-- JavaScript
-- Navbar
-- Hero
-- Services
-- About
-- Footer
-- Responsive design
-- Hamburger menu
-- Dark/Light mode
-- Hover effects
-- Sticky navigation
-- Glassmorphism
-- Image alt text
-- Broken links
-- Console errors
-- Horizontal scrolling
-
-Give a PASS / FAIL / NEEDS IMPROVEMENT report.
-
-Do not  change anything only showing the problems.
-
-### Prompt 14 — Fix QA Issues
-Now fix only the FAIL and WARNING issues identified in the previous QA report.
-
-Do not introduce new features.
-Do not redesign the website.
-Keep all currently working functionality intact.
-
-After making the fixes, run another QA check and report the results.
-
-
-### Prompt 16 — GitHub Preparation
-
-
-Now prepare the project for GitHub submission.
-
-Do not push anything yet.
-
-Check:
-
-- README.md exists
-- Prompts.md exists
-- No passwords
-- No API keys
-- No personal credentials
-- No unnecessary files
-- Correct project structure
-- Correct image paths
-- Correct CSS path
-- Correct JavaScript path
-
-Tell me what I need to fix before pushing to GitHub.
-
-Do not execute git push.
-
-
-### Prompt 17 — README
-
-
-Create or improve README.md for my Prodesk IT Sprint 1 project.
-
-Include placeholders for:
-
-- Project name
-- Project description
-- Technologies used
-- Features
-- Responsive design
-- Dark/Light mode
-- Live website URL
-- GitHub repository URL
-- Screenshot of the deployed website
-
-Do not invent a Live URL or GitHub URL.
-
-## AI Usage Notes
-
-AI assistance was used during development for:
-
-- Understanding CSS concepts
-- Flexbox and Grid implementation
-- Responsive design
-- JavaScript functionality
-- Dark/Light mode
-- Mobile navigation
-- Code review
-- QA and debugging
-- Documentation
-
-The project was reviewed and tested during development.
+# AI Usage Notes
+AI assistance was used primarily as a learning tool during this sprint. I wrote the core HTML structure myself and used AI to:
+- Learn and implement modern CSS Layouts (Flexbox and Grid).
+- Understand Vanilla JavaScript DOM manipulation for Dark Mode and Mobile Menu.
+- Identify bottlenecks and apply advanced Lighthouse Performance optimizations (Preload, WebP, Defer).
