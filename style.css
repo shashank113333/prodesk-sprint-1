@@ -71,7 +71,7 @@ body {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #e94560;
+  background-color: #c73652;
   transition: width 0.3s ease;
 }
 
@@ -79,7 +79,7 @@ body {
   width: 100%;
 }
 .navbar__item a:hover {
-  color: #e94560;
+  color: #c73652;
 }
 
 .hero {
@@ -129,14 +129,14 @@ body {
 }
 
 .btn--primary {
-  background-color: #e94560;
+  background-color: #c73652;
   color: #ffffff;
-  border: 2px solid #e94560;
+  border: 2px solid #c73652;
 }
 
 .btn--primary:hover {
-  background-color: #e94560;
-  border-color: #e94560;
+  background-color: #a5253d;
+  border-color:#a5253d;
   transform: scale(1.05);
   box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
 }
@@ -286,13 +286,13 @@ body {
 }
 
 .footer__social-media a:hover {
-  background: #e94560;
+  background: #c73652;
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(233, 69, 96, 0.3);
 }
 
 .footer__description {
-  color: #888;
+  color: #aaa;
   font-size: 0.95rem;
   margin-top: 1.5rem;
 }
@@ -339,7 +339,7 @@ body {
 }
 
 .contact-section__subtitle {
-  color: #e94560; 
+  color: #c73652; 
   letter-spacing: 2px;
   font-weight: 700;
   margin-bottom: 1rem;
@@ -392,10 +392,9 @@ body {
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #e94560;
+  border-color: #c73652;
 }
 
-/* ================= DARK MODE ================= */
 body.dark-mode {
   background-color: #1a1a2e;
   color: #e0e0e0;
@@ -411,7 +410,7 @@ body.dark-mode .navbar__item a {
 }
 
 body.dark-mode .navbar__item a:hover {
-  color: #e94560;
+  color: #c73652;
 }
 
 body.dark-mode .hero__title {
@@ -473,7 +472,7 @@ body.dark-mode .footer__social-media a {
 }
 
 body.dark-mode .footer__social-media a:hover {
-  background: #e94560;
+  background: #c73652;
 }
 
 body.dark-mode .about__story-content {
@@ -523,7 +522,7 @@ body.dark-mode .form-group textarea {
   transform: scale(1.1);
 }
 
-/* Glassmorphism Effect */
+
 .header.glass {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(12px);
@@ -540,7 +539,7 @@ body.dark-mode .header.glass {
 }
 
 
-/* MEDIA QUERIES */
+
 @media (min-width: 769px) {
   .hamburger {
     display: none;
@@ -732,4 +731,13 @@ body.dark-mode .header.glass {
     width: 100%;
     max-width: 200px;
   }
+}
+
+
+::placeholder {
+  color: #555;
+  opacity: 1;
+}
+body.dark-mode ::placeholder {
+  color: #aaa;
 }
