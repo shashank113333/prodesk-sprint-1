@@ -5,23 +5,18 @@
 }
 
 body {
-  font-family: -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  font-family:system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.6;
   color: #1a1a2e;
   background-color: #ffffff;
   transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-/* ============================================
-   HEADER / NAVBAR
-   Phase 1: Flexbox
-   Phase 2: Sticky Navigation
-   ============================================ */
 .header {
   background-color: #ffffff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
   padding: 0 2rem;
-  position: sticky;  /* Phase 2: Sticky Navigation */
+  position: sticky; 
   top: 0;
   z-index: 1000;
   transition: all 0.3s ease;
@@ -31,8 +26,8 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
-/* Phase 1: Flexbox Navbar */
-.nav {
+
+.navbar{
   display: flex;  
   align-items: center;
   padding: 0.5rem 0;
@@ -40,21 +35,19 @@ body {
   position: relative;
 }
 
-.nav__logo {
+.navbar__logo {
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
-  margin-right: auto; /* Logo ko left karega */
+  margin-right: auto; 
 }
 
-/* Toggle button links ke left me aayega */
-.nav__controls {
+.navbar__controls {
   order: 1;
   margin-right: 2.5rem; 
 }
 
-/* Links right me jayenge */
-.nav__menu {
+.navbar__menu {
   display: flex;  
   list-style: none;
   gap: 2.5rem;
@@ -62,7 +55,7 @@ body {
   order: 2;
 }
 
-.nav__item a {
+.navbar__item a {
   text-decoration: none;
   color: #1a1a2e;
   font-weight: 600;
@@ -71,8 +64,7 @@ body {
   position: relative;
 }
 
-/* Phase 2: Micro-Interaction - Underline effect */
-.nav__item a::after {
+.navbar__item a::after {
   content: '';
   position: absolute;
   bottom: -4px;
@@ -83,15 +75,13 @@ body {
   transition: width 0.3s ease;
 }
 
-.nav__item a:hover::after {
+.navbar__item a:hover::after {
   width: 100%;
 }
-.nav__item a:hover {
-color: #e94560;
+.navbar__item a:hover {
+  color: #e94560;
 }
-/* ============================================
-   HERO SECTION
-   ============================================ */
+
 .hero {
   max-width: 1200px;
   margin: 0 auto;
@@ -127,7 +117,6 @@ color: #e94560;
   margin-top: 0.5rem;
 }
 
-/* Phase 2: Micro-Interactions - Buttons */
 .btn {
   display: inline-block;
   padding: 0.9rem 2.5rem;
@@ -145,7 +134,6 @@ color: #e94560;
   border: 2px solid #e94560;
 }
 
-/* Phase 2: Hover - Scale + Color Shift */
 .btn--primary:hover {
   background-color: #c73652;
   border-color: #c73652;
@@ -173,16 +161,14 @@ color: #e94560;
   margin-top: 1.5rem;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 600px; 
 }
 
 .hero__img:hover {
   transform: scale(1.01);
 }
 
-/* ============================================
-   SERVICES SECTION
-   Phase 1: CSS Grid for 3 cards
-   ============================================ */
 .services {
   max-width: 1200px;
   margin: 0 auto;
@@ -197,14 +183,12 @@ color: #e94560;
   font-weight: 800;
 }
 
-/* Phase 1: CSS Grid - 3 columns */
 .services__grid {
-  display: grid;  /* ✅ CSS Grid */
-  grid-template-columns: repeat(3, 1fr);  /* ✅ 3 equal columns */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
-/* Phase 2: Z-axis lifting on hover */
 .card {
   background: #f8f9fa;
   padding: 2.5rem 2rem;
@@ -214,9 +198,8 @@ color: #e94560;
   border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-/* Phase 2: Z-axis lifting effect */
 .card:hover {
-  transform: translateY(-12px);  /* ✅ Z-axis lift */
+  transform: translateY(-12px);
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
   background: #ffffff;
 }
@@ -233,9 +216,6 @@ color: #e94560;
   line-height: 1.7;
 }
 
-/* ============================================
-   ABOUT SECTION
-   ============================================ */
 .about {
   max-width: 1200px;
   margin: 0 auto;
@@ -265,10 +245,6 @@ color: #e94560;
   line-height: 1.8;
 }
 
-/* ============================================
-   FOOTER
-   Phase 1: Copyright + Social Icons
-   ============================================ */
 .footer {
   background-color: #1a1a2e;
   color: #ffffff;
@@ -288,15 +264,14 @@ color: #e94560;
   font-size: 1.05rem;
 }
 
-/* Phase 1: Social Media Icons */
-.footer__socials {
-  display: flex;  /* ✅ Flexbox for social icons */
+.footer__social-media {
+  display: flex; 
   justify-content: center;
   gap: 1.5rem;
   margin: 1.5rem 0;
 }
 
-.footer__socials a {
+.footer__social-media a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -310,7 +285,7 @@ color: #e94560;
   transition: all 0.3s ease;
 }
 
-.footer__socials a:hover {
+.footer__social-media a:hover {
   background: #e94560;
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(233, 69, 96, 0.3);
@@ -322,9 +297,105 @@ color: #e94560;
   margin-top: 1.5rem;
 }
 
-/* ============================================
-   PHASE 2: DARK MODE
-   ============================================ */
+.about__container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about__story-content {
+  border-left: 4px solid #1a1a2e; 
+  padding-left: 2rem;          
+  margin-top: 1.5rem;
+}
+
+.about__story-content h3 {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.about__story-content .btn {
+  margin-top: 2rem;
+}
+
+.card .btn {
+  margin-top: 1.5rem;
+}
+
+.contact-section {
+  background-color: #f8f9fa; 
+  padding: 6rem 2rem;
+}
+
+.contact-section__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.contact-section__text {
+  flex: 1;
+}
+
+.contact-section__subtitle {
+  color: #e94560; 
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.contact-section__title {
+  font-size: 3rem;
+  color: #1a1a2e;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+}
+
+.contact-section__description {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.contact-section__form {
+  flex: 1;
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #1a1a2e;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #e94560;
+}
+
+/* ================= DARK MODE ================= */
 body.dark-mode {
   background-color: #1a1a2e;
   color: #e0e0e0;
@@ -335,11 +406,11 @@ body.dark-mode .header {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-body.dark-mode .nav__item a {
+body.dark-mode .navbar__item a {
   color: #e0e0e0;
 }
 
-body.dark-mode .nav__item a:hover {
+body.dark-mode .navbar__item a:hover {
   color: #e94560;
 }
 
@@ -373,7 +444,7 @@ body.dark-mode .card:hover {
 }
 
 body.dark-mode .card__title {
-  color: #ffffff;
+  color: #ffffff; 
 }
 
 body.dark-mode .card__description {
@@ -397,17 +468,44 @@ body.dark-mode .footer {
   background-color: #0f0f1f;
 }
 
-body.dark-mode .footer__socials a {
+body.dark-mode .footer__social-media a {
   background: rgba(255, 255, 255, 0.05);
 }
 
-body.dark-mode .footer__socials a:hover {
+body.dark-mode .footer__social-media a:hover {
   background: #e94560;
 }
 
-/* ============================================
-   PHASE 2: HAMBURGER MENU (Mobile)
-   ============================================ */
+body.dark-mode .about__story-content {
+  border-left: 4px solid #ffffff; 
+}
+
+body.dark-mode .about__story-content h3 {
+  color: #bbb;
+}
+
+body.dark-mode .contact-section { 
+  background-color: #0f0f1f; 
+}
+body.dark-mode .contact-section__title { 
+  color: #ffffff; 
+}
+body.dark-mode .contact-section__description { 
+  color: #bbb; 
+}
+body.dark-mode .contact-section__form { 
+  background: #16213e; 
+}
+body.dark-mode .form-group label { 
+  color: #ffffff; 
+}
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+  background: #1a2744;
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
 .hamburger,
 .theme-toggle {
   background: none;
@@ -425,16 +523,7 @@ body.dark-mode .footer__socials a:hover {
   transform: scale(1.1);
 }
 
-/* Hide hamburger on desktop */
-@media (min-width: 769px) {
-  .hamburger {
-    display: none;
-  }
-}
-
-/* ============================================
-   PHASE 3: GLASSMORPHISM
-   ============================================ */
+/* Glassmorphism Effect */
 .header.glass {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(12px);
@@ -450,13 +539,16 @@ body.dark-mode .header.glass {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* ============================================
-   RESPONSIVE DESIGN
-   ============================================ */
 
-/* Tablet */
+/* MEDIA QUERIES */
+@media (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
-  .nav__menu {
+  .navbar__menu {
     display: none;
     position: absolute;
     top: 80px;
@@ -469,12 +561,12 @@ body.dark-mode .header.glass {
     gap: 1.2rem;
     border-radius: 0 0 12px 12px;
   }
-
-  body.dark-mode .nav__menu {
+  
+  body.dark-mode .navbar__menu {
     background: #16213e;
   }
 
-  .nav__menu.active {
+  .navbar__menu.active {
     display: flex;
   }
 
@@ -512,19 +604,32 @@ body.dark-mode .header.glass {
   .about {
     padding: 3rem 1.5rem;
   }
+
+  .contact-section__container {
+    flex-direction: column; 
+    gap: 2rem;
+  }
+  
+  .contact-section__title {
+    font-size: 2.2rem;
+  }
+  
+  .contact-section__form {
+    padding: 1.5rem;
+    width: 100%;
+  }
 }
 
-/* Mobile */
 @media (max-width: 480px) {
   .header {
     padding: 0 1rem;
   }
 
-  .nav {
+  .navbar {
     min-height: 65px;
   }
 
-  .nav__logo {
+  .navbar__logo {
     width: 60px;
     height: 60px;
   }
@@ -555,9 +660,8 @@ body.dark-mode .header.glass {
     margin-bottom: 2rem;
   }
 
-  /* Phase 1: Stacked layout on mobile */
   .services__grid {
-    grid-template-columns: 1fr;  /* ✅ 1 column on mobile */
+    grid-template-columns: 1fr;
     gap: 1.25rem;
   }
 
@@ -571,10 +675,6 @@ body.dark-mode .header.glass {
 
   .about {
     padding: 2rem 1rem;
-  }
-
-  .about__card {
-    padding: 1.5rem;
   }
 
   .about__title {
@@ -593,12 +693,12 @@ body.dark-mode .header.glass {
     font-size: 1.5rem;
   }
 
-  .footer__socials {
+  .footer__social-media {
     gap: 1rem;
     flex-wrap: wrap;
   }
 
-  .footer__socials a {
+  .footer__social-media a {
     padding: 0.5rem 1rem;
     font-size: 0.85rem;
   }
@@ -608,7 +708,6 @@ body.dark-mode .header.glass {
   }
 }
 
-/* Small Mobile */
 @media (max-width: 360px) {
   .hero__title {
     font-size: 1.5rem;
@@ -624,248 +723,13 @@ body.dark-mode .header.glass {
     text-align: center;
   }
 
-  .footer__socials {
+  .footer__social-media {
     flex-direction: column;
     align-items: center;
   }
 
-  .footer__socials a {
+  .footer__social-media a {
     width: 100%;
     max-width: 200px;
-  }
-}
-.about__container {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.about__story-content {
-  border-left: 4px solid #1a1a2e; 
-  padding-left: 2rem;          
-  margin-top: 1.5rem;
-}
-
-/* Dark Mode ke liye line ka color safed karna */
-body.dark-mode .about__story-content {
-  border-left: 4px solid #ffffff; 
-}
-/* why choose us section prodesk it website se liye hai */
-.choose-us {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 5rem 2rem;
-  background-color: transparent;
-}
-
-.choose-us__title {
-  text-align: center;
-  font-size: 2.75rem;
-  margin-bottom: 3.5rem;
-  color: #1a1a2e;
-  font-weight: 800;
-}
-
-/* 3 Column Grid */
-.choose-us__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem 2rem; /* Row gap 3rem, Column gap 2rem */
-}
-
-/* Item Styling - NAYE HOVER EFFECTS KE SAATH */
-.choose-us__item {
-  text-align: center;
-  padding: 1rem;
-  transition: transform 0.3s ease; /* Hover animation ke liye */
-  cursor: default;
-}
-
-/* Item hawa me uthega */
-.choose-us__item:hover {
-  transform: translateY(-8px);
-}
-
-.choose-us__item h3 {
-  margin-bottom: 1rem;
-  color: #1a1a2e;
-  font-size: 1.2rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  transition: color 0.3s ease; /* Color change animation */
-}
-
-/* Item hover karne par heading ka color pink/red hoga */
-.choose-us__item:hover h3 {
-  color: #e94560;
-}
-
-.choose-us__item p {
-  color: #555;
-  font-size: 0.95rem;
-  line-height: 1.7;
-}
-
-/* ============================================
-   DARK MODE COLORS 
-   ============================================ */
-body.dark-mode .choose-us__title,
-body.dark-mode .choose-us__item h3 {
-  color: #ffffff;
-}
-
-/* Dark mode me bhi hover karne par color pink/red hoga */
-body.dark-mode .choose-us__item:hover h3 {
-  color: #e94560; 
-}
-
-body.dark-mode .choose-us__item p {
-  color: #bbb;
-}
-
-/* ============================================
-   MOBILE RESPONSIVENESS
-   ============================================ */
-@media (max-width: 768px) {
-  /* Tablet par 2 column */
-  .choose-us__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  /* Mobile par 1 column */
-  .choose-us__grid {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-  }
-}
-/* About Section ki sub-heading aur button ki spacing */
-.about__story-content h3 {
-  margin-bottom: 1rem;
-  color: #555;
-}
-.about__story-content .btn {
-  margin-top: 2rem;
-}
-
-/* Dark mode ke liye about sub-heading ka color */
-body.dark-mode .about__story-content h3 {
-  color: #bbb;
-}
-
-/* Services Cards wale naye buttons ke upar spacing */
-.card .btn {
-  margin-top: 1.5rem;
-}
-
-/* ============================================
-   CONTACT SECTION
-   ============================================ */
-.contact-section {
-  background-color: #f8f9fa; /* Halkha grey background */
-  padding: 6rem 2rem;
-}
-
-.contact-section__container {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  gap: 4rem;
-}
-
-/* Text Side */
-.contact-section__text {
-  flex: 1;
-}
-
-.contact-section__subtitle {
-  color: #e94560; /* Brand Color */
-  letter-spacing: 2px;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-.contact-section__title {
-  font-size: 3rem;
-  color: #1a1a2e;
-  line-height: 1.2;
-  margin-bottom: 1.5rem;
-  font-weight: 800;
-}
-
-.contact-section__description {
-  color: #555;
-  font-size: 1.1rem;
-}
-
-/* Form Side */
-.contact-section__form-wrapper {
-  flex: 1;
-  background: #ffffff;
-  padding: 2.5rem;
-  border-radius: 16px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); /* Photo jaisa Card shadow */
-}
-
-.form-group {
-  margin-bottom: 1.5rem;
-  text-align: left;
-}
-
-.form-group label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #1a1a2e;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 0.8rem 1rem;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  font-family: inherit;
-  font-size: 1rem;
-  transition: border-color 0.3s ease;
-}
-
-/* Jab input par click ho (Focus) */
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: #e94560;
-}
-
-/* ============================================
-   DARK MODE FOR CONTACT
-   ============================================ */
-body.dark-mode .contact-section { background-color: #0f0f1f; }
-body.dark-mode .contact-section__title { color: #ffffff; }
-body.dark-mode .contact-section__description { color: #bbb; }
-body.dark-mode .contact-section__form-wrapper { background: #16213e; }
-body.dark-mode .form-group label { color: #ffffff; }
-body.dark-mode .form-group input,
-body.dark-mode .form-group textarea {
-  background: #1a2744;
-  border-color: rgba(255, 255, 255, 0.1);
-  color: #fff;
-}
-
-/* ============================================
-   MOBILE RESPONSIVENESS (Contact Form)
-   ============================================ */
-@media (max-width: 768px) {
-  .contact-section__container {
-    flex-direction: column; /* Mobile me ek ke neeche ek aayega */
-    gap: 2rem;
-  }
-  .contact-section__title {
-    font-size: 2.2rem;
-  }
-  .contact-section__form-wrapper {
-    padding: 1.5rem;
-    width: 100%;
   }
 }
